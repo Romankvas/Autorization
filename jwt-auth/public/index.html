@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Authorization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Вхід</h2>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Введіть логін"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Введіть пароль"
+        >
+
+        <button onclick="register()">Реєстрація</button>
+
+        <button onclick="login()">Увійти</button>
+
+        <button onclick="getProfile()">Перевірити профіль</button>
+
+        <button class="logout" onclick="logout()">Вийти</button>
+
+        <div id="message"></div>
+
+        <div id="profile"></div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
